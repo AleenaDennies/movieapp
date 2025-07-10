@@ -8,6 +8,7 @@ import {
   Menu as MenuIcon, Search as SearchIcon, AccountCircle,
   Mail as MailIcon, Notifications as NotificationsIcon, MoreVert as MoreIcon
 } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -110,10 +111,17 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1 }} />
 
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
-            <NavButton Link to={'/h'} style={{color:'white'}}>Home</NavButton>
-             <NavButton Link to={'/f'} style={{color:'white'}}>Faviourites</NavButton>
-            <NavButton Link to={'/l'} style={{color:'white'}}>Login</NavButton>
-            
+           <Link to="/h" style={{ textDecoration: 'none' }}>
+  <NavButton>Home</NavButton>
+</Link>
+
+<Link to="/m" style={{ textDecoration: 'none' }}>
+  <NavButton>Movies</NavButton>
+</Link>
+
+<Link to="/l" style={{ textDecoration: 'none' }}>
+  <NavButton>Login</NavButton>
+</Link>
             {/* <IconButton size="large" color="inherit">
               <Badge badgeContent={3} color="error">
                 <MailIcon />

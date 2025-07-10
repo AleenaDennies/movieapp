@@ -48,7 +48,7 @@ function App() {
           </div>
         }
       />
-      <Route path="/h"element={<Home/>}/>
+      <Route path="/m"element={<Home/>}/>
     </Routes>
 
   );
