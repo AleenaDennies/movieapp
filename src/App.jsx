@@ -6,6 +6,7 @@ import AdminDashboard from './components/Admin';
 import AdminUsers from './components/Adminusers';
 import AdminNavbar from './components/Navbaradmin';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -47,7 +48,9 @@ function App() {
           </div>
         }
       />
+      <Route path="/h"element={<Home/>}/>
     </Routes>
+
   );
 }
 
