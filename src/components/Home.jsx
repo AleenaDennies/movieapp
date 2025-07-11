@@ -8,6 +8,7 @@ const Home = () => {
     <div>
      
       <MovieList/>
+      <Moviecard/>
     </div>
   )
 }
